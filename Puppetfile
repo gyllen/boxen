@@ -55,3 +55,17 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github 'sysctl'
+github 'osx'
+github 'postgresql'
+github 'emacs'
+github 'heroku'
+github 'zsh'
+github 'zshgitprompt'
+github 'chrome'
+github 'skype'
+github 'dropbox'
+github 'redis'
+github 'cmake'
+github 'python'
