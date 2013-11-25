@@ -17,11 +17,11 @@ class mapillary::environment {
   }
 
   repository { "${boxen::config::srcdir}/mapillary_ip":
-    source => 'mapillary/mapillary_api'
+    source => 'mapillary/mapillary_ip'
   }
 
   repository { "${boxen::config::srcdir}/mapillary_website":
-    source => 'mapillary/mapillary_api'
+    source => 'mapillary/mapillary_website'
   }
 
   repository { "${boxen::config::srcdir}/mapillary_ios":
