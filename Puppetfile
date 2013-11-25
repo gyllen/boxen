@@ -69,3 +69,4 @@ github 'dropbox'
 github 'redis'
 github 'cmake'
 github 'python'
+github 'rabbitmq', "0.4.2", :repo => "hailocab/puppet-rabbitmq"

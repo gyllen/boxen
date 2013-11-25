@@ -4,6 +4,8 @@ class mapillary::environment {
 
   # mapillary_ip
   include python
+  include rabbitmq
+  include cmake
 
   # needed repos
   repository { "${boxen::config::srcdir}/mapillary_api":
