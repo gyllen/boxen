@@ -70,5 +70,6 @@ github 'dropbox'
 github 'redis'
 github 'cmake'
 github 'python'
+github 'firefox'
 github 'virtualbox'
 github 'rabbitmq', "0.5.0hailo1", :repo => "hailocab/puppet-rabbitmq"
