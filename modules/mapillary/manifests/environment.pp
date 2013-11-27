@@ -7,6 +7,10 @@ class mapillary::environment {
   include rabbitmq
   include cmake
 
+  package { 'libjpeg':
+    ensure => installed,
+  }
+
   # needed repos
   repository { "${boxen::config::srcdir}/mapillary_api":
     source   => 'mapillary/mapillary_api'

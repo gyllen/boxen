@@ -7,6 +7,7 @@ class people::gyllen {
   include skype
   include dropbox
   include redis
+  include spotify
 
   $home = "/Users/${::boxen_user}"
 
