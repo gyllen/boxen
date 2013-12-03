@@ -15,6 +15,10 @@ class people::gyllen {
 
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
 
+  package { 'tree':
+    ensure => installed,
+  }
+
   repository { $dotfiles_dir:
     source => "gyllen/dotfiles"
   }
