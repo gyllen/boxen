@@ -19,6 +19,10 @@ class people::gyllen {
     ensure => installed,
   }
 
+  package { 'colordiff':
+    ensure => installed,
+  }
+
   repository { $dotfiles_dir:
     source => "gyllen/dotfiles"
   }
