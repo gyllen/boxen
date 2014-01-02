@@ -23,6 +23,10 @@ class people::gyllen {
     ensure => installed,
   }
 
+  package { 'imagemagick':
+    ensure => installed,
+  }
+
   repository { $dotfiles_dir:
     source => "gyllen/dotfiles"
   }
