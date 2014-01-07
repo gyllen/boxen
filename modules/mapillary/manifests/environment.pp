@@ -32,10 +32,6 @@ class mapillary::environment {
     source => 'mapillary/mapillary_ios'
   }
 
-  repository { "${boxen::config::srcdir}/mapillary_ios":
-    source => 'mapillary/mapillary_ios'
-  }
-
   repository { "${boxen::config::srcdir}/mapillary_demos":
     source => 'mapillary/mapillary_demos'
   }
