@@ -7,6 +7,10 @@ class mapillary::environment {
   include rabbitmq
   include cmake
 
+  # development
+  include virtualbox
+  include vagrant
+
   package { 'libjpeg':
     ensure => installed,
   }

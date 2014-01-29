@@ -8,7 +8,6 @@ class people::gyllen {
   include dropbox
   include redis
   include spotify
-  include virtualbox
   include firefox
 
   $home = "/Users/${::boxen_user}"
