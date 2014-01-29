@@ -28,8 +28,12 @@ class mapillary::environment {
     source => 'mapillary/mapillary_ip'
   }
 
-  repository { "${boxen::config::srcdir}/mapillary_website":
-    source => 'mapillary/mapillary_website'
+  repository { "${boxen::config::srcdir}/mapillary_web":
+    source => 'mapillary/mapillary_web'
+  }
+
+  repository { "${boxen::config::srcdir}/mapillary_chef":
+    source => 'mapillary/mapillary_chef'
   }
 
   repository { "${boxen::config::srcdir}/mapillary_ios":
