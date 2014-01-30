@@ -11,6 +11,9 @@ class mapillary::environment {
   include virtualbox
   include vagrant
 
+  vagrant::plugin { 'vagrant-omnibus':
+  }
+
   package { 'libjpeg':
     ensure => installed,
   }
