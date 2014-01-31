@@ -154,6 +154,11 @@ GITHUBTARBALL
     virtualbox (1.0.9)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -218,6 +223,7 @@ DEPENDENCIES
   sysctl (>= 0)
   vagrant (>= 0)
   virtualbox (>= 0)
+  wget (>= 0)
   xquartz (= 1.1.0)
   zsh (>= 0)
   zshgitprompt (>= 0)

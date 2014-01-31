@@ -9,6 +9,7 @@ class people::gyllen {
   include redis
   include spotify
   include firefox
+  include wget
 
   $home = "/Users/${::boxen_user}"
 
