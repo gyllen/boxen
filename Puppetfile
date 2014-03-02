@@ -43,7 +43,7 @@ github "homebrew",   "1.5.1"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
-github "nodejs",     "3.3.0"
+github "nodejs",     "3.6.0"
 github "openssl",    "1.0.0"
 github "phantomjs",  "2.0.2"
 github "pkgconfig",  "1.0.0"
@@ -52,6 +52,8 @@ github "ruby",       "6.7.2"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
+github "android",    "1.1.0"
+github "java",       "1.2.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
@@ -74,4 +76,9 @@ github 'firefox'
 github 'virtualbox'
 github 'vagrant'
 github 'wget'
-github 'rabbitmq', "0.5.0hailo1", :repo => "hailocab/puppet-rabbitmq"
+github 'rabbitmq', "0.5.0hailo2", :repo => "hailocab/puppet-rabbitmq"
+github 'menumeters', "1.0.1", :repo => "Vodeclic/puppet-menumeters"
+github 'sizeup'
+github 'hipchat'
+github 'ohmyzsh', "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
+github 'sublime_text_2'

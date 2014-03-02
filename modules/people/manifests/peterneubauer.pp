@@ -12,7 +12,6 @@ class people::peterneubauer {
   include menumeters
   include wget
   include hipchat
-  include sizeup
   include sublime_text_2
   include ohmyzsh
 

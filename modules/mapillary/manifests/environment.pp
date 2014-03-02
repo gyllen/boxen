@@ -7,9 +7,28 @@ class mapillary::environment {
   include rabbitmq
   include cmake
 
+  # mapillary_android
+  include android::18
+  #include android::tools
+  #include android::platform_tools
+  #android::build_tools { '19.0.2': }
+  #android::add_on { 'addon-google_apis-google-18': }
+  #android::extra { 'extra-google-google_play_services': }
+  exec { "gradle prepare":
+    command => "/bin/sh -c 'cd /opt/boxen/homebrew && /opt/boxen/homebrew/bin/hub checkout 5bab5e9 Library/Formula/gradle.rb'",
+    creates => "/opt/boxen/homebrew/bin/gradle"
+  }
+
+  package { 'gradle':
+    ensure => installed,
+    subscribe => Exec['gradle prepare']
+  }
+
   # development
   include virtualbox
   include vagrant
+
+
 
   vagrant::plugin { 'vagrant-omnibus':
   }
@@ -49,5 +68,11 @@ class mapillary::environment {
 
   repository { "${boxen::config::srcdir}/mapillary_graphsearch":
     source => 'mapillary/mapillary_graphsearch'
+  }
+
+  
+
+  repository { "${boxen::config::srcdir}/mapillary_android":
+    source => 'mapillary/mapillary_android'
   }
 }
