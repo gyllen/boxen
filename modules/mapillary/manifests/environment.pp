@@ -70,9 +70,11 @@ class mapillary::environment {
     source => 'mapillary/mapillary_graphsearch'
   }
 
-  
-
   repository { "${boxen::config::srcdir}/mapillary_android":
     source => 'mapillary/mapillary_android'
+  }
+
+  repository { "${boxen::config::srcdir}/mapillary_blog":
+    source => 'mapillary/mapillary_blog'
   }
 }
