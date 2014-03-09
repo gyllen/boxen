@@ -16,6 +16,33 @@ class people::peterneubauer {
   include ohmyzsh
 
 
+
+  #install mono framework
+  exec { "tap-mono":
+    provider => 'shell',
+    command => "env -i zsh -c 'source /opt/boxen/env.sh && brew tap dtrebbien/mono'",
+    creates => "${homebrew::config::tapsdir}/dtrebbien-mono",
+  }
+
+  #geteventstore
+  exec { "tap-eventstore":
+    provider => 'shell',
+    command => "env -i zsh -c 'source /opt/boxen/env.sh && brew tap peterneubauer/homebrew-geteventstore'",
+    creates => "${homebrew::config::tapsdir}/peterneubauer-geteventstore",
+    require => [
+        Exec["tap-mono"],
+    ],
+  } 
+
+  #start with `mono-sgen /opt/boxen/homebrew/Cellar/geteventstore/2.0.1/bin/EventStore.SingleNode.exe --db ./ESData`
+  package { 'geteventstore':
+    ensure => installed,
+    require => [
+        Exec["tap-eventstore"],
+    ],
+  }
+
+
   sublime_text_2::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
