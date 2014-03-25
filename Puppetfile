@@ -60,7 +60,7 @@ github "java",       "1.2.0"
 
 github 'sysctl'
 github 'osx'
-github 'postgresql'
+github 'postgresql',  "3.0.1"
 github 'emacs'
 github 'heroku'
 github 'zsh'
@@ -79,6 +79,8 @@ github 'wget'
 github 'rabbitmq', "0.5.0hailo2", :repo => "hailocab/puppet-rabbitmq"
 github 'menumeters', "1.0.1", :repo => "Vodeclic/puppet-menumeters"
 github 'sizeup'
+github 'transmission'
+github 'vlc'
 github 'hipchat'
 github 'ohmyzsh', "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
 github 'sublime_text_2'
