@@ -15,6 +15,10 @@ class people::gyllen {
 
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
 
+  package { 'exiftool':
+    ensure => installed,
+  }
+
   package { 'tree':
     ensure => installed,
   }
