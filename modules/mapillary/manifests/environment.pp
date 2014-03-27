@@ -77,4 +77,8 @@ class mapillary::environment {
   repository { "${boxen::config::srcdir}/mapillary_blog":
     source => 'mapillary/mapillary_blog'
   }
+
+  repository { "${boxen::config::srcdir}/mapillary_presentations":
+    source => 'mapillary/mapillary_presentations'
+  }
 }
