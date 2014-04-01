@@ -81,4 +81,8 @@ class mapillary::environment {
   repository { "${boxen::config::srcdir}/mapillary_presentations":
     source => 'mapillary/mapillary_presentations'
   }
+
+  repository { "${boxen::config::srcdir}/mapillary_stats":
+    source => 'mapillary/mapillary_stats'
+  }
 }
