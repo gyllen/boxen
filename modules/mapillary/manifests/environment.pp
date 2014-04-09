@@ -37,6 +37,18 @@ class mapillary::environment {
     ensure => installed,
   }
 
+  include ruby::2_0_0
+
+  ruby::gem { "asciidoctor for 2.0.0":
+    gem     => 'asciidoctor',
+    ruby    => '2.0.0',
+  }
+
+  ruby::gem { "asciidoctor for 1.9.3":
+    gem     => 'asciidoctor',
+    ruby    => '1.9.3',
+  }
+
   # needed repos
   repository { "${boxen::config::srcdir}/mapillary_api":
     source   => 'mapillary/mapillary_api'
