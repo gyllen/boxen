@@ -97,4 +97,8 @@ class mapillary::environment {
   repository { "${boxen::config::srcdir}/mapillary_stats":
     source => 'mapillary/mapillary_stats'
   }
+
+  repository { "${boxen::config::srcdir}/mapillary_ux":
+    source => 'mapillary/mapillary_ux'
+  }
 }
