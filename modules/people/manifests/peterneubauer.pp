@@ -16,6 +16,7 @@ class people::peterneubauer {
   include ohmyzsh
   include transmission
   include vlc
+  include shiftit
 
 
   package { 'exiftool':

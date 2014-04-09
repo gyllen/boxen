@@ -84,3 +84,4 @@ github 'vlc'
 github 'hipchat'
 github 'ohmyzsh', "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
 github 'sublime_text_2'
+github 'shiftit'

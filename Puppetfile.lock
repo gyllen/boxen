@@ -144,6 +144,11 @@ GITHUBTARBALL
     ruby (6.7.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-shiftit
+  specs:
+    shiftit (0.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sizeup
   specs:
     sizeup (1.0.0)
@@ -266,6 +271,7 @@ DEPENDENCIES
   redis (>= 0)
   repository (= 2.2.0)
   ruby (= 6.7.2)
+  shiftit (>= 0)
   sizeup (>= 0)
   skype (>= 0)
   spotify (>= 0)
