@@ -10,6 +10,7 @@ class people::gyllen {
   include spotify
   include firefox
   include wget
+  include vlc
 
   $home = "/Users/${::boxen_user}"
 
