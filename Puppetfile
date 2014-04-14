@@ -60,7 +60,7 @@ github "java",       "1.2.0"
 
 github 'sysctl'
 github 'osx'
-github 'postgresql',  "3.0.1"
+github 'postgresapp'
 github 'emacs'
 github 'heroku'
 github 'zsh'

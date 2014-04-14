@@ -1,6 +1,6 @@
 class mapillary::environment {
   # mapillary_api
-  include postgresql
+  include postgresapp
 
   # mapillary_ip
   include python
