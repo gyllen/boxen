@@ -101,4 +101,8 @@ class mapillary::environment {
   repository { "${boxen::config::srcdir}/mapillary_ux":
     source => 'mapillary/mapillary_ux'
   }
+
+  repository { "${boxen::config::srcdir}/mapillary_tiles":
+    source => 'mapillary/mapillary_tiles'
+  }
 }
