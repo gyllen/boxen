@@ -22,6 +22,10 @@ class people::peterneubauer {
   package { 'exiftool':
     ensure => installed,
   }
+
+  package { 'the_silver_searcher':
+    ensure => installed,
+  }
   package { 'maven':
     ensure => installed,
   }
@@ -35,6 +39,10 @@ class people::peterneubauer {
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
 
   package { 'tree':
+    ensure => installed,
+  }
+
+  package { 'the_silver_searcher'
     ensure => installed,
   }
 

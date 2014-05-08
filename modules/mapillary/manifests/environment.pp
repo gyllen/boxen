@@ -109,4 +109,8 @@ class mapillary::environment {
   repository { "${boxen::config::srcdir}/mapillary_tiles_server":
     source => 'mapillary/mapillary_tiles_server'
   }
+
+  repository { "${boxen::config::srcdir}/mapillary_tools":
+    source => 'mapillary/mapillary_tools'
+  }
 }
